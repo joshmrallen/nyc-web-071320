@@ -56,6 +56,7 @@ class User
     def adopt_animal(animal_instance) # bob
         if self.pets.count < 3
             animal_instance.owner = self #self is the current user instance
+            animal_instance.shelter = nil
         else
             puts "Stop it. Get some help."
         end

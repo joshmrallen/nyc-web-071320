@@ -1,6 +1,7 @@
 require 'pry'
 require_relative './app/models/user'
 require_relative './app/models/animal'
+require_relative './app/models/shelter'
 
 
 vlad = User.new("Vlad", 21, 1234)
@@ -17,8 +18,17 @@ sophie = Animal.new("husky", "sophie", "woof woof", jeff)
 
 # jenn.adopt_animal(bob)
 
+#shelters
+metro_zoo = Shelter.new("Metro Zoo")
+humane = Shelter.new("Humane Society")
 
 
+#animals in shelters
+max = Animal.new("brown bear", "Max", "Roar", nil, metro_zoo)
+tina = Animal.new("dog", "Tina", "bark bark", nil, humane)
+rachel = Animal.new("dog", "Rachel", "woof woof", nil, humane)
+aaron = Animal.new("aardvark", "Aaron", "lick", nil, metro_zoo)
+elron = Animal.new("giraffe", "Elron", "honk", nil, metro_zoo)
 
 
 
